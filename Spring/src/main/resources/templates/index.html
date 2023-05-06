@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Modelo MVC</title>
+</head>
+<body>
+<div class="divider"></div>
+<div class="section">
+    <h5>Nombre</h5>
+    <p th:text="${ empleado.getNombre() }"></p>
+</div>
+<div class="divider"></div>
+<div class="section">
+    <h5>Fecha Nacimiento</h5>
+    <p th:text="${ empleado.fechaNacimiento }"></p>
+</div>
+<div class="divider"></div>
+<div class="section">
+    <h5>Sueldo</h5>
+    <p th:text="${ empleado.getSueldo() }"></p>
+</div>
+<div class="divider"></div>
+<div class="section">
+    <h5>Departamento</h5>
+    <p th:text="${ empleado.getDepartamento() }"></p>
+</div>
+
+</body>
+</html>
